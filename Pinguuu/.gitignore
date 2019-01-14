@@ -1,0 +1,9 @@
+Library/
+Temp/
+asd_Data/
+*.sln
+asd.exe
+UnityPlayer.dll
+.vs/
+*.csproj
+*.cache

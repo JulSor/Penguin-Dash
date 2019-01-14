@@ -1,0 +1,104 @@
+﻿Changelog++
+
+todo: pingviinien animaationopeuksien kopiointi läppärin buildilta, pingviini död koodi, animator liitäntä, lisää esteitä, lisää piikkejä, mäkien kiipeäminen, toimivat sydämet yms
+
+================================
+======= 25-3-2018 ======= Rene =
+================================
+
+UI:
+	Distancen päivitys ottaa huomioon timeScalen eli pausen yms;
+	Korjattu distance placeholder text taas
+	Slide recharge ui teksti laitettu. 
+		Suunnitelmissa, että teksti muuttaa ulkonäköä/näkyvyyttä tms kun slideä voi käyttää, vaikka vihreäksi.
+	Lisätty pari health sydäntä ja asetettu läpinäkyvät background grafiikat alle.
+		Voisi pienentää myös?
+	puute: tarvitaan jtn 321go grafiikkaa
+
+Unity:
+	Hazard tagi luotu
+	
+
+Prefabs:
+	Crystal Hazard Hitbox Medium prefab luotu. Näitä voi läiskiä kristallien päälle.
+		puute: punaista kristallia ei asseteissa vielä
+
+Starting platform:
+	Lisätty toimivat hitboxit aloituspiikkeihin 
+
+================================
+======= 24-3-2018 ======= Rene =
+================================
+
+Background & UI
+	Added some to half-assed cloud amount
+	Order in Layer fix: bg penguins, distance meter, clouds, health
+	Distancelootan pituutta lisätty 220px:n
+	Distance trackkaa distancea vasta kisan alettua
+	korjattu distance placeholder text
+
+
+Player
+	Fixed Order in Layer (1)
+	Fixed idle animation
+	Dive speed +1
+	Dash speed -1
+	(Animaationopeuksissa nyt häikkää :/)
+
+	
+Platform chunkit
+	Lisätty puuttuva rotaatioon
+	(huomattu, että vaatii fiksausta yksi, jossa liian pitkä hyppy tai väärä sprite)
+
+
+Code
+	ForegroundScroll
+		Lisätty 2 sekunnin odotusaika ennen kisan alkua 3 2 1 go tekstille tms
+	PlayerActions
+		Kertoo sprite animatorille milloin kisa alkaa
+	Audio
+		Ei mitään hyödyllistä vielä. 23-3-2018 lisätty audio source main cameraan, johon voi syöttää biisin suoraan soimaan
+
+
+Audio
+	Musiikit arvioitu pelin yhteydessä A-C asteikolla.
+	Placeholderina soi nyt day6 pelissä alussa.
+	Musiikin voimakkuutta hiljennetty 77.77 prosenttiin maksista
+	
+
+Unity
+	Parempi scene object nimeäminen & organisointi
+
+
+CHANGE QUEUE must havesta nice to haveen
+must hahmo ei osaa mennä mäkiä ylös
+must liikkuminen vasemmalle
+must 3 hitpojon koodi
+must cooldown dashille + ui (vaikka text joka vaihtuu placeholderista ja muuttaa väriä ja kokoa?)
+must satutuskristallit
+must tutorial dive hover thing, EZ
+must game over delay (huono versio), EZ
+nice kala powerup system
+
+
+
+======= 21-3-2018 =======
+
+Platformit/Kenttä 
+liikkuvat nyt siitä paikasta, johon ne asetetaan.
+Liikkumisen nopeus asetetaan unityn puolella Scroll Speedillä.
+
+Jotain prefabmuutoksia, alkuplatformit (testi + pikkuhypyt) nyt peräkkäin testattavana.
+
+Animaatiot
+Skulaa hyppyjen, juoksun ja idlen osalta.
+
+Vuorta siirretty 20px
+
+Koodi:
+fixattu destroyerin scenenvaihto
+poistettu koodia, mitä ei käytetä
+
+Mahdollinen To Do lista lyhyesti
+Pilvien liimaus taivaalle, platformien spawnaus koodilla, hahmo ei osaa mennä mäkiä ylös, dive luultavasti helppo tehdä (addforce toiseen suuntaan kun ehdot täyttyvät), 3 hitpojon koodi,
+kala powerupit? esteblockit. hahmo jää hieman pysyvästi jälkeen pienistä tönäisyistä yms. UI
